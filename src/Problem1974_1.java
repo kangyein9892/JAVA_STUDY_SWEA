@@ -54,17 +54,17 @@ public class Problem1974_1 {
 
             // 정사각형 검사
 
-            for(int i=0; i<=6; i+=3) {
-                for(int j=0; j<=6; j+=3) {
+            for(int i = 0; i <= 6; i += 3) {
+                for(int j = 0; j <= 6; j += 3) {
                     int[] arr = new int[10];
 
-                    int a = i+3;
-                    int b = j+3;
+                    // int a = i + 3;
+                    // int b = j + 3;
 
-                    for(int x=i; x<a; x++) {
-                        for(int y=j; y<b; y++) {
+                    for(int x = i; x < i + 3; x++) {
+                        for(int y= j; y < j + 3; y++) {
                             arr[sudoku[x][y]]++;
-                            System.out.println("x: "+x +" y: "+ y);
+                            // System.out.println("x: " +x +" y: "+ y);
                         }
                     }
 
