@@ -9,7 +9,7 @@ public class Problem1989 {
         for(int t = 1; t <= test; t++ ) {
             String str = reader.readLine();
             int result = 1;
-            for(int i = 0; i <= str.length()/2; i++) {
+            for(int i = 0; i <str.length()/2; i++) {
                 if(str.charAt(i) != str.charAt(str.length()-i-1)) { // 맨앞과 맨뒤 비교부터 한칸씩 땡겨서
                     result = 0;
                     break;
